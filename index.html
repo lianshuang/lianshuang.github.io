@@ -11,24 +11,31 @@
             width: 100%;
             overflow: hidden;
         }
+
         video {
             width: 80%;
         }
 
         img {
             max-width: 80%;
+            display: block;
+            margin: 0 auto;
         }
     </style>
 </head>
 
 <body>
     <div class="app">
-        <h1>介绍一下和何美女</h1>
+        <h1 style="text-align:center;">介绍一下和何美女</h1>
 
 
         下面是视频简介
-        <video src="1.mp4" controls="controls"></video>
-        <video src="2.mp4" controls="controls"></video>
+        <div style="text-align:center;">
+            <video src="1.mp4" controls="controls"></video>
+        </div>
+        <div style="text-align:center;">
+            <video src="2.mp4" controls="controls"></video>
+        </div>
 
 
 
