@@ -1,7 +1,7 @@
 # lianshuang.github.io
 <a href="http://lianshuang.github.io" target="_blank">查看在线demo</a>
 
-[http://lianshuang.github.io](url?_blank)
+(http://lianshuang.github.io?_blank)
 
 var aTagArr = [].slice.apply(document.getElementsByTagName("a"));
 
