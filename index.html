@@ -35,6 +35,7 @@
       background-position: center;
       /* background-size: cover; */
       background-size: contain;
+      background-repeat: repeat-x;
     }
   </style>
 </head>
@@ -92,6 +93,7 @@
   <!-- Initialize Swiper -->
   <script>
     var swiper = new Swiper('.swiper-container', {
+      autoplay: 2000,
       loop:true,
       spaceBetween: 30,
       // 如果需要分页器
