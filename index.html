@@ -19,7 +19,7 @@
         position: fixed;
         top: 50%;
         left: 50%;
-        transform: translate(-50%,-50%);
+        transform: translate(-50%, -50%);
         max-width: 80%;
         z-index: 889;
         opacity: .7;
@@ -28,7 +28,8 @@
         /* margin: 0 auto; */
     }
 
-    body, html {
+    body,
+    html {
         /* background: url('./tiktop.mp4') */
         height: 100%;
     }
@@ -43,7 +44,7 @@
         position: absolute;
         top: 50%;
         left: 50%;
-        transform: translate(-50%,-50%);
+        transform: translate(-50%, -50%);
     }
 
     html {
@@ -266,6 +267,19 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.2/js/swiper.min.js"></script>
 <script type="text/javascript">
     $(function () {
+        document.addEventListener('DOMContentLoaded', function () {
+            function audioAutoPlay() {
+                var audio = document.getElementById('audiojs');
+                audio.play();
+                document.addEventListener("WeixinJSBridgeReady", function () {
+                    audio.play();
+                }, false);
+            }
+            audioAutoPlay();
+        });
+
+
+
         $('#yes').click(function (event) {
             modal('我就知道我的思思老师一定会愿意的。(^_^)', function () {
                 $('.page_one').addClass('hide');
@@ -413,11 +427,11 @@
                 <div class="swiper-slide"><img src="./5.jpg" alt=""></div>
             </div>
         </div> -->
-        
+
     </div>
     <div class="page_two hide">
         <div class="type_words"></div>
-        <video src="./tiktop.mp4" autoplay loop controls="controls"></video>
+        <video id="audiojs" src="./tiktop.mp4" autoplay loop controls="controls"></video>
     </div>
 </body>
 
