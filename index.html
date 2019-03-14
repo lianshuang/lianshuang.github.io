@@ -266,143 +266,143 @@
 </style>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.2/js/swiper.min.js"></script>
 <script type="text/javascript">
-    $(function () {
-        document.addEventListener('DOMContentLoaded', function () {
-            function audioAutoPlay() {
-                var audio = document.getElementById('audiojs');
-                audio.play();
-                document.addEventListener("WeixinJSBridgeReady", function () {
-                    audio.play();
-                }, false);
-            }
-            audioAutoPlay();
-        });
+//     $(function () {
+//         document.addEventListener('DOMContentLoaded', function () {
+//             function audioAutoPlay() {
+//                 var audio = document.getElementById('audiojs');
+//                 audio.play();
+//                 document.addEventListener("WeixinJSBridgeReady", function () {
+//                     audio.play();
+//                 }, false);
+//             }
+//             audioAutoPlay();
+//         });
 
 
 
-        $('#yes').click(function (event) {
-            modal('我就知道我的思思老师一定会愿意的。(^_^)', function () {
-                $('.page_one').addClass('hide');
-                $('.page_two').removeClass('hide');
-                typeWrite();
-                fireworks();
+//         $('#yes').click(function (event) {
+//             modal('我就知道我的思思老师一定会愿意的。(^_^)', function () {
+//                 $('.page_one').addClass('hide');
+//                 $('.page_two').removeClass('hide');
+//                 typeWrite();
+//                 fireworks();
 
-            });
-        });
-        $('#no').click(function (event) {
-            modal('明人不说暗话！', A);
-        });
-        var mySwiper = new Swiper('.swiper-container', {
-            // direction: 'vertical', // 垂直切换选项
-            loop: true, // 循环模式选项
+//             });
+//         });
+//         $('#no').click(function (event) {
+//             modal('明人不说暗话！', A);
+//         });
+//         var mySwiper = new Swiper('.swiper-container', {
+//             // direction: 'vertical', // 垂直切换选项
+//             loop: true, // 循环模式选项
 
-            // 如果需要分页器
-            // pagination: {
-            //     el: '.swiper-pagination',
-            // },
+//             // 如果需要分页器
+//             // pagination: {
+//             //     el: '.swiper-pagination',
+//             // },
 
-            // 如果需要前进后退按钮
-            // navigation: {
-            //     nextEl: '.swiper-button-next',
-            //     prevEl: '.swiper-button-prev',
-            // },
+//             // 如果需要前进后退按钮
+//             // navigation: {
+//             //     nextEl: '.swiper-button-next',
+//             //     prevEl: '.swiper-button-prev',
+//             // },
 
-            // 如果需要滚动条
-            // scrollbar: {
-            //     el: '.swiper-scrollbar',
-            // },
-        })
-    });
+//             // 如果需要滚动条
+//             // scrollbar: {
+//             //     el: '.swiper-scrollbar',
+//             // },
+//         })
+//     });
 
-    function A() {
-        modal('嘿，You~', B);
-    }
+//     function A() {
+//         modal('嘿，You~', B);
+//     }
 
-    function B() {
-        modal('鹅中意你啊~', C);
-    }
+//     function B() {
+//         modal('鹅中意你啊~', C);
+//     }
 
-    function C() {
-        modal('不要着急点拒绝啊~', D);
-    }
+//     function C() {
+//         modal('不要着急点拒绝啊~', D);
+//     }
 
-    function D() {
-        modal('我会伤心的啊~~', E);
-    }
+//     function D() {
+//         modal('我会伤心的啊~~', E);
+//     }
 
-    function E() {
-        modal('答应我好不好嘛~~', F);
-    }
+//     function E() {
+//         modal('答应我好不好嘛~~', F);
+//     }
 
-    function F() {
-        modal('跟我走吧', G);
-    }
+//     function F() {
+//         modal('跟我走吧', G);
+//     }
 
-    function G() {
-        modal('为你遮风挡雨~~', H);
-    }
+//     function G() {
+//         modal('为你遮风挡雨~~', H);
+//     }
 
-    function H() {
-        modal('为你洗衣做饭~~', K);
-    }
+//     function H() {
+//         modal('为你洗衣做饭~~', K);
+//     }
 
-    function K() {
-        modal('为你上刀山下油锅~~', I);
-    }
+//     function K() {
+//         modal('为你上刀山下油锅~~', I);
+//     }
 
-    function I() {
-        modal('不要犹豫了，当你答应了~~', J);
-    }
+//     function I() {
+//         modal('不要犹豫了，当你答应了~~', J);
+//     }
 
-    function J() {
-        modal('行，我们去民政局登记吧', function () {
-            fireworks();
-        });
-    }
+//     function J() {
+//         modal('行，我们去民政局登记吧', function () {
+//             fireworks();
+//         });
+//     }
 
-    function fireworks() {
-        $('.page_one').addClass('hide');
-        $('.page_two').removeClass('hide');
-        $('.page_two').fireworks({
-            sound: false,
-            opacity: 0.9,
-            width: '100%',
-            height: '100%'
-        });
-    }
+//     function fireworks() {
+//         $('.page_one').addClass('hide');
+//         $('.page_two').removeClass('hide');
+//         $('.page_two').fireworks({
+//             sound: false,
+//             opacity: 0.9,
+//             width: '100%',
+//             height: '100%'
+//         });
+//     }
 
-    function modal(content, callback) {
-        var tpl = '<div class="container">' +
-            '<div class="mask"></div>' +
-            '<div class="modal">' +
-            '<p>' + content + '</p>' +
-            '<button type="button" id="confirm" class="confirm">确定</button>' +
-            '</div>' +
-            '</div>';
-        $('body').append(tpl);
-        $(document).on('click', '.confirm', function () {
-            $('.container').remove();
-            callback();
-        });
-    }
+//     function modal(content, callback) {
+//         var tpl = '<div class="container">' +
+//             '<div class="mask"></div>' +
+//             '<div class="modal">' +
+//             '<p>' + content + '</p>' +
+//             '<button type="button" id="confirm" class="confirm">确定</button>' +
+//             '</div>' +
+//             '</div>';
+//         $('body').append(tpl);
+//         $(document).on('click', '.confirm', function () {
+//             $('.container').remove();
+//             callback();
+//         });
+//     }
 
-    var myWords = ''
-    var x = 0;
-    var speed = 150;
-    var current = 0;
+//     var myWords = ''
+//     var x = 0;
+//     var speed = 150;
+//     var current = 0;
 
-    function typeWrite() {
-        $('.type_words').html(myWords.substring(0, x++) + '_');
-        var timer = setTimeout("typeWrite()", speed);
-        if (x == myWords.length) {
-            x = myWords.length;
-            clearTimeout(timer)
-        }
-    }
+//     function typeWrite() {
+//         $('.type_words').html(myWords.substring(0, x++) + '_');
+//         var timer = setTimeout("typeWrite()", speed);
+//         if (x == myWords.length) {
+//             x = myWords.length;
+//             clearTimeout(timer)
+//         }
+//     }
 </script>
 
 <body>
-    <div class="share_img"><img src="./a8b.png" alt=""></div>
+<!--     <div class="share_img"><img src="./a8b.png" alt=""></div>
     <div class="page_one">
         <div class="content">
             <div class="text_wrapper">
@@ -432,7 +432,7 @@
     <div class="page_two hide">
         <div class="type_words"></div>
         <video id="audiojs" src="./tiktop.mp4" autoplay loop controls="controls"></video>
-    </div>
+    </div> -->
 </body>
 
 </html>
